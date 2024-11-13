@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Montserrat");
+}
+@font-face {
+    font-family: "Lato", sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Lato");
+}
+/* 
+"Montserrat": "Montserrat", "Arial", sans-serif;
+"Lato": "Lato", "Arial", sans-serif;
+
+#8d6cc7: #8d6cc7;
+#8d6cc7: darken(#8d6cc7, 3%);
+#dae2f1: #dae2f1; */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(
+      rgba(220, 234, 237, 0.7),
+      rgba(220, 234, 237, 0.7)
+    ),
+    url(http://res.cloudinary.com/jenelle-miller/image/upload/v1518619522/doodles_cuau2z.png)
+      repeat;
+}
+
+.container {
+  height: 100%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Montserrat";
+  color: #8d6cc7;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+
+
+.form-background {
+  background: #fff;
+  width: 420px;
+  border-radius: 10px;
+  padding: 32px;
+  -webkit-box-shadow: 0px 15px 88px -37px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0px 15px 88px -37px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 15px 88px -37px rgba(0, 0, 0, 0.17);
+}
+
+form {
+  text-transform: capitalize;
+  font-family: "Lato";
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  border: 1px solid #dae2f1;
+  padding: 15px 20px;
+  color: #8498af;
+  font-size: 0.9rem;
+  transition: 0.4s;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:focus {
+    border-color: #8d6cc7;
+    outline: none;
+  }
+}
+
+[type="submit"] {
+  background: #8d6cc7;
+  border-radius: 30px;
+  padding: 16px 30px;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: 0.4s;
+  font-family: "Montserrat";
+  border: none;
+  box-shadow: none;
+  margin: 0;
+
+  &:hover {
+    background: #8d6cc7;
+    cursor: pointer;
+  }
+}
+
+.sign-up-divider {
+  font-family: "Montserrat";
+  text-align: center;
+  color: #c4c8d4;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  padding: 24px 0;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 27%;
+    margin-right: 5%;
+    height: 1px;
+    background: #dae2f1;
+    vertical-align: middle;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 27%;
+    margin-left: 5%;
+    height: 1px;
+    background: #dae2f1;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("https://fonts.googleapis.com/css?family=Montserrat");
+}
+@font-face {
+    font-family: "Lato";
+    src: url("https://fonts.googleapis.com/css?family=Lato");
+}
+/* 
+"Montserrat": "Montserrat", "Arial", sans-serif;
+"Lato": "Lato", "Arial", sans-serif;
+
+#8d6cc7: #8d6cc7;
+#8d6cc7: darken(#8d6cc7, 3%);
+#dae2f1: #dae2f1; */
+.alert-info{
+  text-transform: capitalize;
+  text-align: center;
+  margin-block: 20px;
+  padding: 10px 10px;
+  background-color: rgb(186, 232, 247);
+  color: blue;
+  border-radius: 5px;
+  border: 1px rgb(122, 122, 244) solid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(
+      rgba(220, 234, 237, 0.7),
+      rgba(220, 234, 237, 0.7)
+    ),
+    url(http://res.cloudinary.com/jenelle-miller/image/upload/v1518619522/doodles_cuau2z.png)
+      repeat;
+}
+
+.container {
+  height: 100%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Montserrat";
+  color: #8d6cc7;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+
+
+.form-background {
+  background: #fff;
+  width: 420px;
+  border-radius: 10px;
+  padding: 32px;
+  -webkit-box-shadow: 0px 15px 88px -37px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0px 15px 88px -37px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 15px 88px -37px rgba(0, 0, 0, 0.17);
+  margin: 10px;
+}
+h5{
+    margin-bottom: 10px;
+}
+form {
+  text-transform: capitalize;
+  font-family: "Lato";
+  text-align: center;
+}
+p{
+    font-family: "Lato";
+}
+a{
+    margin-inline: 10px;
+    font-weight: 600;
+}
+input {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  border: 1px solid #b4a3d1;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  transition: 0.4s;
+  outline: none;
+  font-family: "Montserrat";
+}
+
+
+input:focus {
+    border-color: #8d6cc7;
+    outline: none;
+}
+.btn{
+  background-color: #8d6cc7;
+  border-radius: 30px;
+  padding: 16px 30px;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: 0.4s;
+  font-family: "Montserrat";
+  box-shadow: none;
+  margin: 0;
+
+}
+.btn:hover {
+    background: #8d6cc7;
+    cursor: pointer;
+  }
+
